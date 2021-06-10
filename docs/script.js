@@ -30,6 +30,9 @@ window.onload = async function () {
       } else {
         document.getElementById('popTitle').textContent = item.title;
       }
+
+      document.getElementById("popLink").href = item.link;
+
     });
   };
 
@@ -68,6 +71,7 @@ let searchBooks = async (query) => {
       title: vi.title,
       description: vi.description,
       image: vi.imageLinks ? vi.imageLinks.thumbnail : '',
+      link: vi.infoLink,
     };
   });
 
