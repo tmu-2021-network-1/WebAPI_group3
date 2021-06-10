@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library Cafe</title>
+</head>
+
+<body class='p16 order-body'>
+    <header>
+        <h1 class='mb16'>Library Cafe</h1>
+        <div id="top-button-wrap">
+            <a id="top-home" class="top-off" href="index.html">Home</a>
+            <a id="top-order" class="top-on" href="#">Order</a>
+            <a id="top-menu" class="top-off" href="menu.html">Menu</a>
+            <a id="top-credit" class="top-off" href="credit.html">Credit</a>
+        </div>
+    </header>
+
+    <!--先に出すポップアップ-->
+    <div class="popup" id="js-popup">
+        <div class="black-background" id="js-black-bg"></div>
+        <p class="popup-word" id="js-popup-word">finding the best book for you</p>
+    </div>
+
+    <!--時間差で出すポップアップ-->
+    <div class="popup-inner" id="js-popup-after">
+        <div class="close-btn" id="js-close-btn">×</div>
+        <a href="#"><img id="popImg" src="./img/noImage.png" alt="ポップアップ画像"></a>
+        <h2 id="popTitle">タイトル</h2>
+        <div class="scroll">
+            <p id="popInfo">説明文</p>
+        </div>
+    </div>
+
+    <!--吹き出し-->
+    <div class="explain-wrap">
+        <img src="./img/bubble.png">
+        <p>いらっしゃいませ<br>商品をお選びください</p>
+    </div>
+
+    <!--画像スライダー-->
+    <div class="container">
+        <div class="prev">
+            <img src="./img/arrow-left.png" height=40px>
+        </div>
+        <div class="sliderbox">
+            <ul class="sliderlist">
+                <li class="sliderlist__item sliderlist__item1">
+                    <p>Coffee</p>
+                    <img src="./img/coffee.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item2">
+                    <p>Iced tea</p>
+                    <img src="./img/tea.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item3">
+                    <p>Matcha latte</p>
+                    <img src="./img/greenTea.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item4">
+                    <p>Honey<br>caffè latte</p>
+                    <img src="./img/rate.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item5">
+                    <p>Cheesecake</p>
+                    <img src="./img/cheezeCake.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item6">
+                    <p>Strawberry<br>mousse</p>
+                    <img src="./img/ichigo.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item7">
+                    <p>Donuts</p>
+                    <img src="./img/donut.png">
+                </li>
+                <li class="sliderlist__item sliderlist__item8">
+                    <p>Sandwiches</p>
+                    <img src="./img/sand.png">
+                </li>
+            </ul>
+        </div>
+        <div class="next">
+            <img src="./img/arrow-right.png" height=40px>
+        </div>
+    </div>
+
+    <button id="order-button">注文する</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
